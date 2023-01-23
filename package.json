@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.7",
-    "@svgr/webpack": "^5.5.0",
+    "@svgr/webpack": "^6.5.1",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "autoprefixer": "^10.2.3",
     "axios": "^1.2.3",
