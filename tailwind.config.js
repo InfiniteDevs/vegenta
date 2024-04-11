@@ -1,13 +1,10 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: {
-    enable: true,
-    content: [
-      "./pages/**/*.{js,jsx,ts,tsx}",
-      "./components/**/*.{js,jsx,ts,tsx}",
-      "./redux/**/*.{js,ts,jsx,tsx}",
-    ],
-  },
-
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./redux/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   darkMode: false,
   variants: {
     color: ["responsive", "hover", "focus", "group-hover"],
@@ -28,9 +25,7 @@ module.exports = {
 
   variants: {
     extend: {},
-    aspectRatio: ['responsive', 'hover']
+    aspectRatio: ["responsive", "hover"],
   },
-  plugins: [
-    require('@tailwindcss/aspect-ratio'),
-  ],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };
