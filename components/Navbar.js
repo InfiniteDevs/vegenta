@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import Search from '../components/sidebar/search'
 import { Transition } from "@headlessui/react";
 import  Toogle  from '../components/nav/Toggle'
+import Link from 'next/link'
 
 function Navbar({visit}) {
 	const [isOpen, setIsOpen] = useState(false);
